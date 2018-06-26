@@ -20,6 +20,7 @@ public abstract class GeneralConfigGroup extends ConcurrentHashMap<String, Strin
     private ConfigGroup internalConfigGroup;
 
     /**
+     * 
      * 兼容spring,是否通过EnumerablePropertySource加载配置组
      */
     protected boolean enumerable = false;

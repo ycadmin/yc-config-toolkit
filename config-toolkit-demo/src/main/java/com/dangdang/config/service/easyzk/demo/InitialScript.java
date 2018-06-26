@@ -21,7 +21,7 @@ public class InitialScript {
 	/**
 	 * Change This To Your Zk Address
 	 */
-	private static final String ZK = "config-toolkit.mabaoshan.com:8011";
+	private static final String ZK = "172.16.37.29:2181";
 
 	private static final Map<String, String> data = Maps.newHashMap();
 

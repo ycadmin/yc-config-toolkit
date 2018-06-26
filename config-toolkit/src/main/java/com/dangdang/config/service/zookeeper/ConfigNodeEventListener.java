@@ -23,6 +23,8 @@ import org.apache.zookeeper.Watcher.Event.KeeperState;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
+import com.google.common.base.Preconditions;
+
 /**
  * 监听器
  * 
@@ -37,7 +39,7 @@ public final class ConfigNodeEventListener implements CuratorListener {
 
 	public ConfigNodeEventListener(ZookeeperConfigGroup configNode) {
 		super();
-		this.configNode = configNode;
+		this.configNode = Preconditions.checkNotNull(configNode);
 	}
 
 	@Override

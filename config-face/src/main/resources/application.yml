@@ -1,3 +1,0 @@
-zk: localhost:2181
-server:
-  port: 8080
